@@ -1,0 +1,307 @@
+/html, body {
+  margin: 1;
+  padding: 0;
+}
+*{
+    background-color: #3c4b59;
+}
+ul {
+    border: 3px solid #b6c7d7;
+    width: 700px;
+    text-align: center;
+}
+div.container {
+    display: inline-block;
+    text-align: center;
+    float: center;
+    }
+ul.gamesul {
+    display: inline-block;
+    text-align: left;
+    }
+#unblockedgames {
+    color: lavender;
+    }
+input {
+    text-color: #8FD9FB;
+    background: lavender;
+    }
+#easygames {
+    color: lavender;
+    }
+#multiplayer {
+    color: lavender;
+    }
+#gamesul {
+    color: lavender;
+    }
+h3 {
+    text-color: lavender
+    }
+li:hover {
+    background-color: lavender;
+    }
+p {
+    color: lavender;
+    font-family: 'roboto'
+    font-weight: 120;
+}
+ul {
+    background-color: black;
+    }
+li {
+    background-color:black
+    }
+
+body {
+  color:lavender;
+  text-align: center;
+  font-family: 'Verdana';
+  font-weight: 100;
+}
+[href]{
+    color: lavender;
+    background: black;
+}
+[href]:hover{
+    background: lavender;
+    color: teal;
+    }
+/*#supermarioworld:hover{
+    background: url(file:///media/fuse/drivefs-c42dcc2d06fb7e3dae4edccd57ac33fe/root/%22Google%20Classroom%22/Screenshot%202024-10-17%2010.34.52%20AM.png) center center;
+        background-size: cover;
+        height: 600px;
+}*/
+/* Add a black background color to the top navigation bar */
+.topnav {
+  width: 750px;
+  overflow: hidden;
+  background-color: black;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: lavender;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #teal;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-bottom:8px;
+  margin-right: 10px;
+  font-size: 18px;
+  background: lavender;
+}
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 700px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+#signuplink{
+    background: #3c4b59;
+    }
+#signuplink:hover{
+    background: lavender;
+    }
+#submit {
+    color: lavender;
+    background: teal;
+    }
+.gamesuggestionsform {
+    color: lavender;
+    font-family: 'Verdana';
+    font-weight: 100;
+    }
+li{
+text-align: left;
+}
+ul{
+text-align: center;
+}
+.container {
+  color: lightgray;
+  margin: 0 auto;
+  max-width: 940px; 
+  padding: 0 10px;
+}
+
+.header {
+  background-size: cover;
+  height: auto;
+  text-align: center; 
+}
+
+.header .container {
+  position: relative;
+  top: 200px;
+}
+
+.header h1 {
+  color: lavender;
+  line-height: 100px; 
+  font-size: 80px;
+  margin-top: 3;
+  margin-bottom: 10px;
+  text-transform: uppercase; 
+}
+
+@media (min-width:850px) {
+  .header h1 {
+    font-size: 120px;
+  }
+}
+
+.header p {
+  color: lavender;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase; 
+}
+
+.btn {
+  color: #fff;
+  background: #000;
+  padding: 10px 40px;
+  text-decoration: none; 
+  transition: background .5s; 
+}
+
+.nav { 
+  background: #000;
+  height: 80px; 
+  width: 100%;
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto; 
+  padding: 0;
+}
+
+.nav ul li {
+  color: #fff;
+  display: inline-block; 
+  height: 80px;
+  line-height: 80px; 
+  list-style: none;
+  padding: 0 10px;
+  transition: background .5s; 
+}
+
+.btn:hover, .nav ul li:hover {
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;  
+}
+
+.main .container {
+  margin: 80px auto;
+}
+
+.main img {
+  float: left;
+  margin: 50px 80px 50px 0;
+}
+
+.jumbotron {
+  background: url(https://classroom.google.com/c/NzAyMzcyNTM0MzI2) center center;
+  background-size: cover;
+  height: 600px; 
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 220px;
+}
+
+.jumbotron h2 {
+  color: #fff;
+  text-align: right; 
+}
+
+.jumbotron p {
+  color: #fff; 
+  text-align: right; 
+}
+
+.jumbotron .btn {
+  margin: 10px 0 0;
+  float: right; 
+}
+
+.footer { 
+  background: #000;
+  height: 80px; 
+  padding-bottom: 50px;
+}
+
+.footer p { 
+  color: #fff;
+  font-size: 14px;  
+  height: 80px; 
+  line-height: 80px;
+  margin: 0;  
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main, .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}
