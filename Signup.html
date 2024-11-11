@@ -1,28 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <link rel="stylesheet" type="text/css"
-    href="style.css">
-    <head>
-      <title>Google Classroom Join Class</title>
-        <link rel="icon" href="Yellow Google Classroom.png" type="image/x-icon type">
-      <header id="title">
-        <h1>Create a "Google Classroom" account</h1>
-      </header>
-    </head>
-<main>
-  <form>
-      <label for="newUsername">Username</label>
-    <div></div>
-      <input id="newUsername" type="text" name="username" required>
-    <div></div>
-      <label for="NewPassword">Password</label>
-    <div></div>
-      <input id="NewPassword" type="password" required>
-    <div></div>
-      <button id="submit" type="submit">Create Account</button>
-  </form>
-  <p>Already have an account? <a href="index.html">Login</a></p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+        <label for="newUsername">Username:</label>
+        <input type="text" id="newUsername" required>
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" required>
+        <button type="submit">Create Account</button>
+    </form>
+    <p>Already have an account? <a href="index.html">Login</a></p>
 
-  <script src="script.js"></script>
-  </main>
-  </html>
+    <script src="script.js"></script>
+</body>
+</html>
