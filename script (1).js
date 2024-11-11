@@ -40,5 +40,5 @@ document.getElementById("signupForm")?.addEventListener("submit", function(event
     localStorage.setItem('users', JSON.stringify(users));
     
     alert("Account created successfully! You can now log in.");
-    window.location.href = "login.html"; // Redirect to login page
+    window.location.href = "index.html"; // Redirect to login page
 });
