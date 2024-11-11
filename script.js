@@ -5,8 +5,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
 
     // Define valid credentials (In a real application, you'd fetch this from a database)
-    const validUsername = 'user';
-    const validPassword = 'password123';
+    const validUsername = 'Baby J';
+    const validPassword = '420WhatchaSmoking?';
 
     if (username === validUsername && password === validPassword) {
         // Redirect to index.html on successful login
