@@ -14,7 +14,7 @@ document.getElementById("loginForm")?.addEventListener("submit", function(event)
 
     if (user) {
         // Redirect to index.html if login is successful
-        window.location.href = "index.html";
+        window.location.href = "home.html";
     } else {
         alert("Invalid username or password.");
     }
