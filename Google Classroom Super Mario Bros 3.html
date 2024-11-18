@@ -10,61 +10,6 @@
                 padding: 0;
             }
         </style>
-<style>
-        /* Basic styles to center the image */
-        #image-container {
-            display: none; /* Initially hide the container */
-            position: fixed;
-            top: 50%;
-            left: 33.5%;
-            transform: translate(-50%, -50%);
-            z-index: 9999999999999; /* High z-index to overlay on other elements */
-        }
-        img {
-            max-width: 155%; /* Responsive image sizing */
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-
-<div id="image-container">
-    <img id="hotkey-image" src="" alt="Hotkey Image">
-</div>
-
-<script>
-    // Function to show the image
-    function showImage() {
-        // Change the source of the image
-        const imageUrl = 'Physics Screenshot.png'; // Replace with your image URL
-        const img = document.getElementById('hotkey-image');
-        img.src = imageUrl;
-
-        // Display the image container
-        const container = document.getElementById('image-container');
-        container.style.display = 'block'; // Show the image container
-    }
-
-    // Function to hide the image (optional)
-    function hideImage() {
-        const container = document.getElementById('image-container');
-        container.style.display = 'none'; // Hide the image container
-    }
-
-    // Event listener for keydown events
-    document.addEventListener('keydown', (event) => {
-        // Check if Ctrl and 'h' are pressed
-        if (event.key === '`') {
-            event.preventDefault(); // Prevent default browser behavior
-            showImage(); // Show the image
-        }
-
-        // Optional: Add a way to hide the image (e.g., hitting Esc)
-        if (event.key === 'Escape') {
-            hideImage(); // Hide the image when Esc is pressed
-        }
-    });
-</script>
 
     <body class="header">
         <div style="width:auto;height:579;">
@@ -82,6 +27,79 @@
         </script>
         <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
     </body>
+        <br>
+            <div class="container">
+<ul>
+<h5>Upload a screenshot here of whatever you're supposed to be working on, then press the grave accent key (`) to pull it up. Press the escape key (esc) to hide it again and return to the site</h5>
+<br>
+<h5>**I cannot see any images you upload here, they're all uploaded and stored locally**</h5>
+<style>
+        /* Basic styles to center the image */
+        #fullscreenImage {
+            display: none; /* Initially hide the container */
+            position: fixed;
+            top: 50%;
+            left: 33.5%;
+            transform: translate(-50%, -50%);
+            z-index: 1000; /* High z-index to overlay on other elements */
+        }
+        img {
+            max-width: 155%; /* Responsive image sizing */
+            height: auto;
+        }
+    </style>
+
+
+<div></div>
+
+
+    <form id="uploadForm">
+        <input class="imageselector" type="file" accept="image/*" required>
+        <button type="submit">Upload Image</button>
+    </form>
+
+    <div id="fullscreenImage" onclick="hideImage()">
+        <img id="uploadedImage" src="" alt="Uploaded Image">
+    </div>
+
+    <script>
+        const uploadForm = document.getElementById('uploadForm');
+        const fullscreenImage = document.getElementById('fullscreenImage');
+        const uploadedImage = document.getElementById('uploadedImage');
+
+        uploadForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            const fileInput = event.target.querySelector('input[type="file"]');
+            const file = fileInput.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    uploadedImage.src = e.target.result; // Set src as the uploaded image
+                }
+                reader.readAsDataURL(file); // Convert the file to a base64 URL
+            }
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === '`') {
+                fullscreenImage.style.display = 'flex';
+            } else if (event.key === 'Escape') {
+                hideImage();
+            }
+        });
+
+        function hideImage() {
+            fullscreenImage.style.display = 'none';
+        }
+    </script>
+</ul>
+    </div>
+
+</script>
+        <br>
+    <a href="home.html">Back to Home</a>
+    </body>
+</html>
     <br>
     <a href="home.html">Back to Home</a>
 </html>
