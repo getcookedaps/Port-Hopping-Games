@@ -22,8 +22,12 @@ ul.gamesul {
 #unblockedgames {
     color: lavender;
     }
-input {
-    text-color: #8FD9FB;
+#uploadForm {
+    color: lavender;
+    background-color: black;
+    }
+.input {
+    text-color: lavender;
     background: lavender;
     }
 #easygames {
@@ -37,6 +41,14 @@ input {
     }
 h3 {
     text-color: lavender
+    }
+h5 {
+    text-color: lavender;
+    background-color: black;
+    }
+.imageselector {
+    text-color: lavender;
+    background-color: black;
     }
 li:hover {
     background-color: lavender;
@@ -148,7 +160,8 @@ body {
 #signuplink:hover{
     background: lavender;
     }
-#submit {
+
+#login {
     color: lavender;
     background: teal;
     }
@@ -164,7 +177,7 @@ ul{
 text-align: center;
 }
 .container {
-  color: lightgray;
+  color: lavender;
   margin: 0 auto;
   max-width: 940px; 
   padding: 0 10px;
