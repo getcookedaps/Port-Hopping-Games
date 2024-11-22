@@ -5,6 +5,10 @@
 *{
     background-color: #3c4b59;
 }
+.changetitle {
+  background-color: black;
+  color: lavender;
+}
 ul {
     border: 3px solid #b6c7d7;
     width: 700px;
