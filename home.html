@@ -257,6 +257,24 @@
       <li class="games">
           <a href="Google Classroom The Legend of Zelda - A Link to the Past.html" class="alinktothepast">The Legend of Zelda - A Link to the Past</a>
       </li>
+      <li>
+      <button id="randomLinkButton">Random Game</button>
+</li>
+    <script>
+        document.getElementById("randomLinkButton").addEventListener("click", function() {
+            // Get all links with the 'random-link' class
+            const links = document.querySelectorAll('.games');
+            
+            // Generate a random index
+            const randomIndex = Math.floor(Math.random() * links.length);
+            
+            // Get the random link
+            const randomLink = links[randomIndex].href;
+
+            // Redirect to the random link
+            window.location.href = randomLink;
+        });
+    </script>
       <!---Add SM64, Twilight Princess, Sonic 3, Contra IV Alien Wars, Super Mario Bros 3, OG Mario, Majora's Mask, The Legend of Zelda, Street Fighter II Turbo, Metroid Fusion, Metroid Zero Mission, Metroid, Metroid II: Samus Returns, Donkey Kong, Donkey Kong Country, --->
   </ul>
 </div>
